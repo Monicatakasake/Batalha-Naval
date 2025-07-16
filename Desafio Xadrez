@@ -9,9 +9,8 @@ int main() {
     // Início do programa
     printf("Movimentos das peças de xadrez:\n\n");
 
-    // ---------------------
     // Movimento do Bispo
-    // ---------------------
+
     printf("Movimento do Bispo (diagonal superior direita):\n");
 
     for (int i = 1; i <= PASSOS_BISPO; i++) {
@@ -21,9 +20,8 @@ int main() {
 
     printf("\n");
 
-    // ---------------------
     // Movimento da Torre
-    // ---------------------
+
     printf("Movimento da Torre (para a direita):\n");
 
     int contadorTorre = 1;
@@ -34,9 +32,8 @@ int main() {
 
     printf("\n");
 
-    // ---------------------
     // Movimento da Rainha
-    // ---------------------
+
     printf("Movimento da Rainha (para a esquerda):\n");
 
     int contadorRainha = 1;
