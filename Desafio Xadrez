@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+// Definindo os passos que cada peça vai dar
+const int PASSOS_BISPO = 5;
+const int PASSOS_TORRE = 5;
+const int PASSOS_RAINHA = 8;
+
+int main() {
+    // Início do programa
+    printf("Movimentos das peças de xadrez:\n\n");
+
+    // ---------------------
+    // Movimento do Bispo
+    // ---------------------
+    printf("Movimento do Bispo (diagonal superior direita):\n");
+
+    for (int i = 1; i <= PASSOS_BISPO; i++) {
+        printf("Cima\n");
+        printf("Direita\n");
+    }
+
+    printf("\n");
+
+    // ---------------------
+    // Movimento da Torre
+    // ---------------------
+    printf("Movimento da Torre (para a direita):\n");
+
+    int contadorTorre = 1;
+    while (contadorTorre <= PASSOS_TORRE) {
+        printf("Direita\n");
+        contadorTorre++;
+    }
+
+    printf("\n");
+
+    // ---------------------
+    // Movimento da Rainha
+    // ---------------------
+    printf("Movimento da Rainha (para a esquerda):\n");
+
+    int contadorRainha = 1;
+    do {
+        printf("Esquerda\n");
+        contadorRainha++;
+    } while (contadorRainha <= PASSOS_RAINHA);
+
+    printf("\n");
+
+    // Fim do programa
+    printf("Todos os movimentos foram realizados com sucesso.\n");
+
+    return 0;
+}
+🔍
